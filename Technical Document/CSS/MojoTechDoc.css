@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    /*trying this out as my default box-sizing*/
+    /*will need rules for ::before and ::after but they aren't used here*/
+}
+
+html {
+  font-size: 62.5%;
+  /*changes root font size so that 1rem=10px.Just so I can do the math easier in my head, since I'm told using rem units is best practice*/
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  /*The two lines above are so web browser algorithms don't resize my text on mobile. First line for iOS, second for "everyone" else*/
+}
+
+body {
+    font-size: 1.6rem;
+    /*resizes all the text back to default 16px for now*/
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    /*lets containers CONTAIN their images*/
+}
+
+ol:not(article ol),
+ul:not(article ul) {
+    list-style: none;
+    /*Add 'role="list" to elements for screen reading, list-style=none; disables on some browsers. This is just a default placeholder, but good to note anyway. */
+}
+
+a {
+    text-underline-position: under;
+    /* lowers underline, better readibility */
+    text-decoration-thickness: 7;
+    /* thickness as a % of the font size */
+}
