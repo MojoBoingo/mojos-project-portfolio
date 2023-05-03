@@ -15,6 +15,8 @@ html {
 body {
     font-size: 1.6rem;
     /*resizes all the text back to default 16px for now*/
+    background-color: #0d1117;
+    color: #e6edf3; 
 }
 
 img {
@@ -34,4 +36,51 @@ a {
     /* lowers underline, better readibility */
     text-decoration-thickness: 7;
     /* thickness as a % of the font size */
+}
+
+main {
+    display: block;
+    padding-right: 30rem;
+    padding-left: 5rem;
+    overflow: auto;
+}
+
+main a {
+  color: #218bff;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: #e6edf3;
+  
+}
+
+#navbar ul {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+#navbar li {
+  display: flexbox;
+  margin-right: 2rem;
+  padding: 0.2rem;
+
+}
+
+#navhead {
+    padding-bottom: 1rem;
+}
+
+figure {
+  display: inline-block;
+  padding-bottom: 1.5rem;
+  margin-left: 1rem;
+
+}
+
+figcaption {
+  display: inherit;
+  margin-top: -2rem
 }
