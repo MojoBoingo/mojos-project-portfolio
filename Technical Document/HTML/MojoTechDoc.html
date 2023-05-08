@@ -8,27 +8,28 @@
 </head>
 <body>
     <nav id="navbar">
-        <header><b>In this article</b></header>
-        <ul>
-          <li><a class="nav-link" href="#introduction">Introduction</a></li>
-          <li><a class="nav-link" href="#create_a_repository">Create a repository</a></li>
-          <li><a class="nav-link" href="#creating_a_branch">Creating a branch</a></li>
-          <li><a class="nav-link" href="#making_and_committing_changes">Making and committing changes</a></li>
-          <li><a class="nav-link" href="#opening_a_pull_request">Opening a pull request</a></li>
-          <li><a class="nav-link" href="#merging_your_pull_request">Merging your pull request</a></li>
-          <li><a class="nav-link" href="#next_steps">Next steps</a></li>
-      </nav>
+    <header id="navhead"><b>In this article</b></header>
+    <ul role="list">
+      <li><a class="nav-link" href="#introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#create_a_repository">Create a repository</a></li>
+      <li><a class="nav-link" href="#creating_a_branch">Creating a branch</a></li>
+      <li><a class="nav-link" href="#making_and_committing_changes">Making and committing changes</a></li>
+      <li><a class="nav-link" href="#opening_a_pull_request">Opening a pull request</a></li>
+      <li><a class="nav-link" href="#merging_your_pull_request">Merging your pull request</a></li>
+      <li><a class="nav-link" href="#next_steps">Next steps</a></li>
+  </nav>
    <main id="main-doc">
-       <figure>
+       <figure id="doc-header">
          <h1>Hello World</h1>
          <figcaption>Follow this Hello World exercise to get started with GitHub.</figcaption>
          </figure>
      <section class="main-section" id="introduction">
-         <header>Introduction</header> <!--resize header elements-->
+         <header>Introduction</header>
+         <hr/>
          <p>GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.</p> 
          <p>This tutorial teaches you GitHub essentials like repositories, branches, commits, and pull requests. You'll create your own Hello World repository and learn GitHub's pull request workflow, a popular way to create and review code.</p>
          <p>In this quickstart guide, you will:</p>
-         <ul>
+         <ul role="list">
              <li>Create and use a repository</li>
              <li>Start and manage a new branch</li>
              <li>Make changes to a file and push them to GitHub as commits</li>
@@ -38,9 +39,10 @@
          </section>
          <section class="main-section" id="create_a_repository">
          <header>Create a repository</header>
+         <hr/>
          <p>A repository is usually used to organize a single project. Repositories can contain folders and files, images, videos, spreadsheets, and data sets -- anything your project needs. Often, repositories include a README file, a file with information about your project. README files are written in the plain text Markdown language. You can use this <a href="https://www.markdownguide.org/cheat-sheet/">cheat sheet</a> to get started with Markdown syntax. GitHub lets you add a README file at the same time you create your new repository. GitHub also offers other common options such as a license file, but you do not have to select any of them now.</p>
          <p>Your <code>hello-world</code> repository can be a place where you store ideas, resources, or even share and discuss things with others.</p>
-         <ol>
+         <ol role="list">
              <li>In the upper-right corner of any page, use the + drop-down menu, and select New repository.
                  <img src="https://docs.github.com/assets/cb-49451/mw-1000/images/help/repository/repo-create.webp" />
              </li>
@@ -54,18 +56,19 @@
          </section>
          <section class="main-section" id="creating_a_branch">
          <header>Creating a branch</header>
+         <hr/>
          <p>Branching lets you have different versions of a repository at one time.</p>
          <p>By default, your repository has one branch named <code>main</code> that is considered to be the definitive branch. You can create additional branches off of <code>main</code> in your repository. You can use branches to have different versions of a project at one time. This is helpful when you want to add new features to a project without changing the <code>main</code> source of code. The work done on different branches will not show up on the <code>main</code> branch until you merge it, which we will cover later in this guide. You can use branches to experiment and make edits before committing them to <code>main</code>.</p>
          <p>When you create a branch off the <code>main</code> branch, you're making a copy, or snapshot, of <code>main</code> as it was at that point in time. If someone else made changes to the <code>main</code> branch while you were working on your branch, you could pull in those updates.</p>
          <p>This diagram shows:</p>
-         <ul>
+         <ul role="list">
              <li>The <code>main</code> branch</li>
              <li>A new branch called <code>feature</code></li>
              <li>he journey that <code>feature</code> takes before it's merged into <code>main</code></li>
          </ul>
          <img src="https://docs.github.com/assets/cb-23923/mw-1000/images/help/repository/branching.webp" />
          <p>Have you ever saved different versions of a file? Something like:</p>
-         <ul>
+         <ul role="list">
              <li><code>story.txt</code></li>
              <li><code>story-edit.txt</code></li>
              <li><code>story-edit-reviewed.txt</code></li>
@@ -73,7 +76,7 @@
          <p>Branches accomplish similar goals in GitHub repositories.</p>
          <p>Here at GitHub, our developers, writers, and designers use branches for keeping bug fixes and feature work separate from our <code>main</code> (production) branch. When a change is ready, they merge their branch into <code>main</code>.</p>
          <h3>Create a branch</h3>
-         <ol>
+         <ol role="list">
              <li>Click the Code tab of your <code>hello-world</code> repository.</li>
              <li>Above the file list, click the dropdown menu that says <b>main</b>.
                  <img src="https://docs.github.com/assets/cb-78797/mw-1000/images/help/branches/branch-selection-dropdown.webp" />
@@ -86,7 +89,7 @@
          <p>Now you have two branches, <code>main</code> and <code>readme-edits</code>. Right now, they look exactly the same. Next you'll add changes to the new branch.</p>
          </section>
          <section class="main-section" id="making_and_committing_changes">
-         <header>Making and committing changes</header>
+         <header>Making and committing changes</header><hr/>
          <p>When you created a new branch in the previous step, GitHub brought you to the code page for your new <code>readme-edits</code> branch, which is a copy of <code>main</code>.</p>
          <p>You can make and save changes to the files in your repository. On GitHub, saved changes are called commits. Each commit has an associated commit message, which is a description explaining why a particular change was made. Commit messages capture the history of your changes so that other contributors can understand what you’ve done and why.</p>
          <ol>
@@ -99,7 +102,7 @@
          </ol>
          </section>
          <section class="main-section" id="opening_a_pull_request">
-         <header>Opening a pull request</header>
+         <header>Opening a pull request</header><hr/>
          <p>Now that you have changes in a branch off of <code>main</code>, you can open a pull request.</p>
          <p>Pull requests are the heart of collaboration on GitHub. When you open a pull request, you're proposing your changes and requesting that someone review and pull in your contribution and merge them into their branch. Pull requests show diffs, or differences, of the content from both branches. The changes, additions, and subtractions are shown in different colors.</p>
          <p>As soon as you make a commit, you can open a pull request and start a discussion, even before the code is finished.</p>
@@ -120,7 +123,7 @@
          <p>Your collaborators can now review your edits and make suggestions.</p>
          </section>
          <section class="main-section" id="merging_your_pull_request">
-         <header>Merging your pull request</header>
+         <header>Merging your pull request</header><hr/>
          <p>In this final step, you will merge your <code>readme-edits</code> branch into the <code>main</code> branch. After you merge your pull request, the changes on your <code>readme-edits</code> branch will be incorporated into <code>main</code>.</p>
          <p>Sometimes, a pull request may introduce changes to code that conflict with the existing code on <code>main</code>. If there are any conflicts, GitHub will alert you about the conflicting code and prevent merging until the conflicts are resolved. You can make a commit that resolves the conflicts or use comments in the pull request to discuss the conflicts with your team members.</p>
          <p>In this walk-through, you should not have any conflicts, so you are ready to merge your branch into the main branch.</p>
@@ -131,7 +134,7 @@
          </ol>
          </section>
          <section class="main-section" id="next_steps">
-         <header>Next steps</header>
+         <header>Next steps</header><hr/>
          <p>By completing this tutorial, you've learned to create a project and make a pull request on GitHub.</p>
          <p>Here's what you accomplished in this tutorial:</p>
          <ul>
@@ -143,6 +146,9 @@
          <p>Take a look at your GitHub profile and you'll see your work reflected on your contribution graph.</p>
          <p>For more information about the power of branches and pull requests, see "<a href="https://docs.github.com/en/get-started/quickstart/github-flow">GitHub flow</a>." For more information about getting started with GitHub, see the other guides in the <a href="https://docs.github.com/en/get-started/quickstart">getting started quickstart</a>.</p>
      </section>
+     <footer><hr>
+         Disclaimer: None of the content displayed here is mine, only the code around it. It is taken from <a href="https://github.com/github/docs">GitHub Docs</a> and used in accordance with their CC-BY-4.0 and MIT licenses. This project is purely for educational purposes, and with the exception of the navigation bar any links herein share the same landing page as the official (and better done) version of the document. 
+     </footer>
    </main>
 </body>
 </html>
