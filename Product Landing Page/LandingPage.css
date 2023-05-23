@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    /*trying this out as my default box-sizing*/
+    /*will need rules for ::before and ::after but they aren't used here*/
+}
+
+html {
+    font-size: 62.5%;
+    /*changes root font size so that 1rem=10px.Just so I can do the math easier in my head, since I'm told using rem units is best practice*/
+}
+
+body {
+    font-size: 1.6rem;
+    /*resizes all the text back to default 16px for now*/
+    font-family: "Klavika Light Condensed", arial, sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    /*lets containers CONTAIN their images*/
+}
+
+ol:not(article ol),
+ul:not(article ul) {
+    list-style: none;
+    /*Add 'role="list" to elements for screen reading, list-style=none; disables on some browsers. This is just a default placeholder, but good to note anyway. */
+}
+
+a {
+    text-decoration: none;
+}
+
+#header {
+    display: flex;
+    background-color: black;
+    width: auto;
+    height: 10rem;
+}
+
+#header-img {
+    position: absolute;
+    width: 12rem;
+    height: auto;
+    top: 3rem;
+    left: 2rem;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
