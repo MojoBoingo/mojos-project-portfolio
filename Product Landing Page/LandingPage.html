@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Landing Page</title>
-    <link rel="stylesheet" href="LandingPage.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header id="header">
+        <img id="header-img" src="https://www.amd.com/content/dam/code/images/header/amd-header-logo.svg" />
         <nav id="nav-bar">
             <ul>
-                <li><a class="nav-link" href="#form">Beginning</a></li>
-                <li><a class="nav-link" href="#video">Middle</a></li>
-                <li><a class="nav-link" href="#footer">End</a></li>
+                <li><a class="nav-link" href="#product-lineup">Products</a></li>
+                <li><a class="nav-link" href="#form">Subscribe</a></li>
+                <li><a class="nav-link" href="#shop">Shop</a></li>
             </ul>
         </nav>
-        <img id="header-img" src="https://www.amd.com/content/dam/code/images/header/amd-header-logo.svg" />
     </header>
     <main>
         <h1>AMD Radeon™ RX 6000 Graphics Cards</h1>
-        <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
-            <input id="email" type="email" name="email" placeholder="abc123@email.com" />
-            <input id="submit" type="" />
-        </form>
-        <div id="product-lineup">
-            <img id="product-img"
-                src="https://thepcenthusiast.com/wp-content/uploads/2021/07/AMD-Radeon-RX-6000-Series-GPUs-1024x576.jpg" />
-            <img id="product-img"
-                src="https://www.thefpsreview.com/wp-content/uploads/2022/05/amd-radeon-rx-6000-series-midnight-black-trio.jpg" />
+        <div id="product-intro">
+        <h2>The Latest in Performance</h2>
+            <img id="title-img"
+                src="https://www.amd.com/system/files/2022-04/1303168-AMD-Radeon-RX-6650-6750-6950-logo-1260x709_0.png" />
         </div>
-        <video id="video" src="https://www.youtube.com/watch?v=oHpgu-cTjyM&ab_channel=AMD"></video>
+        <div id="product-lineup">
+            <video id="video" src="https://www.youtube.com/watch?v=oHpgu-cTjyM&ab_channel=AMD">Where Gaming Begins: Ep. 2 | AMD Radeon™ RX 6000 Series Graphics Cards</video>
+            <img id="product-img" src="https://thepcenthusiast.com/wp-content/uploads/2021/07/AMD-Radeon-RX-6000-Series-GPUs-1024x576.jpg" />
+        </div>
+        <div id="subscribe">
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
+            <input id="email" type="email" name="email" placeholder="abc123@email.com" />
+            <input id="submit" type="" /> <!--type is blank here so the tests will still fail if I want to check them-->
+        </form>
+        </div>
     </main>
-    <footer id="footer"></footer>
+    <footer id="shop"></footer>
 </body>
-
 </html>
