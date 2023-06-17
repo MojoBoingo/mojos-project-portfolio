@@ -6,15 +6,15 @@
 }
 
 html {
-  font-size: 62.5%;
-  overflow: auto;
-  /*changes root font size so that 1rem=10px.Just so I can do the math easier in my head, since I'm told using rem units is best practice*/
+    font-size: 62.5%;
+    overflow: auto;
+    /*changes root font size so that 1rem=10px.Just so I can do the math easier in my head, since I'm told using rem units is best practice*/
 }
 
 body {
     font-size: 1.6rem;
     /*resizes all the text back to default 16px for now*/
-    font-family: "Klavika Light Condensed",arial,sans-serif;
+    font-family: "Klavika Light Condensed", arial, sans-serif;
     font-weight: bold;
     margin: 0;
     padding: 0;
@@ -71,7 +71,7 @@ a {
     justify-content: center;
 }
 
-#nav-bar li{
+#nav-bar li {
     white-space: nowrap;
 }
 
