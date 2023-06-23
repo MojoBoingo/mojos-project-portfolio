@@ -100,7 +100,7 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 400px;
+    min-height: 400px; 
 }
 
 h2 {
@@ -112,11 +112,23 @@ h2 {
 #title-img {
     display: flex;
     order: 2;
+    width: 100%; /* added this to make sure your title img fills it's container */
+    height: 100%;
 }
 
 #product-lineup {
     display: flex;
 
+}
+
+#product-lineup > video {
+    width: 100%;
+    height: auto;
+}
+
+#product-img {
+    width: 100%; /* added this to make sure your product img fills it's container */
+    height: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
